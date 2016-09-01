@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -12,22 +14,33 @@
     <title>Saddler's Woods Interactive Trail Map</title>
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">Saddler's Woods</a>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="row">
-        <div id="map-legend" class="col-lg-2">
-
+        <div id="header-left">
+          <img id="header-logo" src="img/swca.png" alt="Saddler's Woods Conservation Association logo">
+          <!-- <a class="navbar-brand" href="https://www.saddlerswoods.org">Saddler's Woods</a> -->
         </div>
-        <div class="col-lg-10">
-          <div id="mapid">
-          </div>
+      </div>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-inverse">Go</button>
+      </form>
+    </nav>
+    <div class="container-fluid main-content">
+      <div class="row">
+        <div class="col-xs-3 map-legend">
+          <h2>Text</h2>
+        </div>
+        <div class="col-xs-9">
+          <p>Placeholder for interactive map</p>
+          <div id="map"></div>
         </div>
       </div>
     </div>
-
+    <footer>
+      <p>&copy; 2016 | Lisa MacCarrigan</p>
+    </footer>
   </body>
 </html>
