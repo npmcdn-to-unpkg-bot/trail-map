@@ -15,6 +15,10 @@
   width: auto;
 }
 
+.navbar-inverse {
+  border-style: none;
+}
+
 #header-logo {
   height: 85px;
   width: auto;
@@ -31,24 +35,33 @@
 }
 
 .navbar-right {
-  margin: 30px 0px;
+  margin: 60px 0px 10px 0px;
 }
 
+.navbar-form {
+  padding: 0px;
+}
+
+/*==================== FIXED NAV SOCIAL MEDIA LINKS====================*/
+
+#menu {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 8em;
+  margin-top: -2.5em;
+}
 /*==================== MAIN BODY CONTENT ====================*/
 
+}
 .main-content {
   margin-top: 100px;
 }
 
-.map-legend {
-  background-color: #323232;
-  height: 500px;
-}
-
 /*==================== MAP ====================*/
 #map {
-width: 960px;
-height: 500px;
+width: 100%;
+height: auto;
 }
 
 /*==================== PAGE FOOTER ====================*/

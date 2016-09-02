@@ -1,7 +1,9 @@
-var map = L.map('map',{scrollWheelZoom:false}).setView([43.64701, -79.39425], 15);
+var map = L.map('map').setView([51.505, -0.09], 13);
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var marker = L.marker([43.64701, -79.39425]).addTo(map);
+L.marker([51.5, -0.09]).addTo(map)
+    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+    .openPopup();
